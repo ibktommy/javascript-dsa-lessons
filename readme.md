@@ -1,4 +1,6 @@
-# THIS IS THE GUIDE FOR THE COURSE SRUCTURE AND CODES AS MADE BY THE AUTHOR - Brad Traversy
+# THIS IS THE GUIDE FOR THE COURSE SRUCTURE AND CODES AS MADE BY THE TUTOR - Brad Traversy
+
+I (the student - ibktommy) did not include the `[name]-solution.js` code files like the Tutor did. The `[name].js` code files already serves as my solution.
 
 ## Traversy JS Challenges: Data Structures & Algorithms
 
