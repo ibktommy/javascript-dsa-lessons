@@ -1,8 +1,11 @@
 function getSum(number1, number2) {
-	if (typeof(number1) && typeof(number2) !== 'number')
-  return "Both input must be valid Numbers!"
+	let result;
+	if (typeof number1 !== 'number' || typeof number2 !== 'number') {
+		return 'Invalid Inputs - Both inputs must be numbers';
+	}
 
-  return number1 + number2
+	result = number1 + number2;
+	return result;
 }
 
-module.exports = getSum(10, 2);
+module.exports = getSum;
