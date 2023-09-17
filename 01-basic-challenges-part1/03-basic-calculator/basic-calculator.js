@@ -25,8 +25,7 @@ function calculator(num1, num2, operator) {
 			break;
 
 		default:
-      result = "Invalid Operator"
-			break;
+      return new Error("Invalid operator, use any of '+, *, /, -'");
 	}
 
   return result
