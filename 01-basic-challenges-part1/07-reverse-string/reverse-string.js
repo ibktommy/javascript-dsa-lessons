@@ -2,10 +2,8 @@
 function reverseString(strChar) {
  let strCharArr = []
 
- for (let i = strChar.length; i >= 0; i--) {
-  if (strChar[i] !== undefined) {
+ for (let i = strChar.length - 1; i >= 0; i--) {
     strCharArr.push(strChar[i])
-  }
  }
 
  return strCharArr.join('')
