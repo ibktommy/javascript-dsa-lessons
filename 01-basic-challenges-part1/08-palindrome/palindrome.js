@@ -10,9 +10,9 @@ function palindrome(word) {
   // return reversedWord
   if (reversedWord === word) {
     return `"${word}" is an example of a Palindrome`
+  } else {
+    return `"${word}" is not an example of a Palindrome`;
   }
-
-  return `"${word}" is not an example of a Palindrome`
 }
 
 module.exports = palindrome
