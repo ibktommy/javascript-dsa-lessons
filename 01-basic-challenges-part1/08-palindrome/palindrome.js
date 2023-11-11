@@ -1,24 +1,16 @@
 // Function that takes in a string and check if it is a palindrome, i.e when the string is reversed the word is also same as the original
 
-// function palindrome(word) {
-//   let reversedWord = ''
+function palindrome(word) {
+  const lowercaseAlphabets = getLowerCaseAlphabets(word)
 
-//   for (let i = word.length - 1; i >= 0; i--) {
-//     reversedWord += word[i]
-//   }
+  console.log(`After removing all characters that are not lowercase Alphabets, here is the reformatted word: \n ${lowercaseAlphabets}`);
 
-//   // return reversedWord
-//   if (reversedWord === word) {
-//     return `"${word}" is an example of a Palindrome`
-//   } else {
-//     return `"${word}" is not an example of a Palindrome`;
-//   }
-// }
+  const reversedWord = getReversedString(lowercaseAlphabets)
 
-// Function to get the character codes in a string
-function getCharCode(str) {
-  for (let i = 0; i <= str.length - 1; i++) {
-   console.log(str.charCodeAt(i));
+  if (reversedWord === lowercaseAlphabets) {
+    return `"${lowercaseAlphabets}" is a Palindrome!`
+  } else {
+    return `"${lowercaseAlphabets}" is not a Palindrome!`;
   }
 }
 
@@ -35,8 +27,18 @@ function getLowerCaseAlphabets(str) {
 	return lowercaseAlphabets.join('');
 }
 
-// module.exports = palindrome
-// module.exports = getCharCode
-module.exports = getLowerCaseAlphabets
+// Function to return a reversed string
+function getReversedString(str) {
+	  let reversedString = ''
+
+	  for (let i = str.length - 1; i >= 0; i--) {
+	    reversedString += str[i];
+	  }
+
+    return reversedString
+}
+
+module.exports = palindrome
+
 
 
