@@ -1,7 +1,7 @@
 const palindrome = require('./palindrome.js')
 
 const output1 = 'wom734/5an\[4'
-const output2 = 'mada823][m'
+const output2 = 'madam madam'
 const output3= 'a    ['
 const output4 = 'racecar'
 const output5 = 'racecars'
