@@ -22,7 +22,21 @@ function getCharCode(str) {
   }
 }
 
+// Function to return only lowercase alphabets in a string
+function getLowerCaseAlphabets(str) {
+	let lowercaseAlphabets = [];
+
+	for (let i = 0; i <= str.length - 1; i++) {
+		if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) {
+			lowercaseAlphabets.push(str[i]);
+		}
+	}
+
+	return lowercaseAlphabets.join('');
+}
+
 // module.exports = palindrome
-module.exports = getCharCode
+// module.exports = getCharCode
+module.exports = getLowerCaseAlphabets
 
 
