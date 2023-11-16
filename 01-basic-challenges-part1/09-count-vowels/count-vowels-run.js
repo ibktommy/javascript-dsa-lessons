@@ -1,4 +1,6 @@
 // const getLowerCaseLetters = require('./count-vowels');
-const getUpperCaseLetters = require('./count-vowels');
+const countVowels = require('./count-vowels');
 
-console.log(getUpperCaseLetters());
+console.log(countVowels("veget349able]["));
+console.log(countVowels("ade 4gdu io"));
+console.log(countVowels("software developer"));
