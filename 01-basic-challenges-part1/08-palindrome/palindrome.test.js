@@ -12,7 +12,7 @@ test('Palindrom Test', () => {
   const result3 = palindrome(input3)
 
   // Expected Result
-  expect(result1).toBe(`"${input1}" is not an example of a Palindrome`)
-  expect(result2).toBe(`"${input2}" is not an example of a Palindrome`)
-  expect(result3).toBe(`"${input3}" is an example of a Palindrome`)
+  expect(result1).toBe(`"${input1}" is not a Palindrome!`)
+  expect(result2).toBe(`"${input2}" is not a Palindrome!`)
+  expect(result3).toBe(`"${input3}" is a Palindrome!`)
 })
