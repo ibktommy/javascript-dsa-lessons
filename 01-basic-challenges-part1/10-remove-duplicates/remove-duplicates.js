@@ -16,6 +16,8 @@ function removeDuplicatesInArray (arrData) {
 
   return newArr
 
+  // return Array.from(new Set(arrData));
+
 }
 
 module.exports = removeDuplicatesInArray;
