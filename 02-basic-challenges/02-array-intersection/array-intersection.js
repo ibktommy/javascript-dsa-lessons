@@ -18,9 +18,9 @@ function printArrayIntersects(arrInputOne, arrInputTwo) {
 
   // Print the new Array with intersected items
   if (arrOutput.length === 0) {
-    return console.log('The Arrays do not have an intersection');
+    return 'The Arrays do not have an intersection';
   } else {
-    return console.log(arrOutput);
+    return arrOutput;
   }
 }
 
